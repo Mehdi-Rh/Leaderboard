@@ -1,0 +1,55 @@
+main {
+  display: flex;
+}
+
+/* Recent scores */
+#score {
+  margin: 0 1rem;
+}
+
+#score div {
+  display: flex;
+  gap: 1rem;
+}
+
+#refreshBtn {
+  height: max-content;
+  align-self: center;
+  padding: 0.5rem;
+}
+
+#name-score {
+  list-style-type: none;
+  padding: 0;
+}
+
+#name-score li {
+  padding: 0.5rem;
+}
+
+#name-score li:nth-child(odd) {
+  background-color: #e3e3e3c0;
+}
+
+/* Add your score section */
+#addScore {
+  margin: 0 1rem;
+}
+
+#addScore form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+form #addScoreBtn {
+  width: fit-content;
+  align-self: flex-end;
+  padding: 0.5rem;
+}
+
+button,
+#name-score,
+input {
+  border: solid black 2px;
+}
