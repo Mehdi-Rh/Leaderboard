@@ -9,10 +9,10 @@ main {
 
 #score div {
   display: flex;
-  gap: 1rem
+  gap: 1rem;
 }
 
-#refresh {
+#refreshBtn {
   height: max-content;
   align-self: center;
   padding: 0.5rem;
@@ -28,7 +28,7 @@ main {
 }
 
 #name-score li:nth-child(odd) {
-background-color: #e3e3e3c0;
+  background-color: #e3e3e3c0;
 }
 
 /* Add your score section */
@@ -39,7 +39,7 @@ background-color: #e3e3e3c0;
 #addScore form {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem
+  gap: 0.5rem;
 }
 
 form #addScoreBtn {
@@ -48,6 +48,8 @@ form #addScoreBtn {
   padding: 0.5rem;
 }
 
-button, #name-score, input {
+button,
+#name-score,
+input {
   border: solid black 2px;
 }
