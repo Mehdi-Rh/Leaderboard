@@ -1,33 +1,4 @@
-# LINTERS install
-
-  ## github actions file link 
-
-https://github.com/microverseinc/linters-config/blob/master/html-css-js/.github/workflows/linters.yml
-
-
-  ## Weblint 
-
-npm install --save-dev hint@6.x
-
-file link: https://github.com/microverseinc/linters-config/blob/master/html-css-js/.hintrc
-
-
-  ## Stylelint
-
-npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
-
-file link: https://github.com/microverseinc/linters-config/blob/master/html-css-js/.stylelintrc.json
-
-  ## ESLint
-
-npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x
-
-
-file link: https://github.com/microverseinc/linters-config/blob/master/html-css-js/.eslintrc.json
-
-
-
-# LINTERS check & fix
+# LINTERS
 
   ## weblint
   Run: npx hint .
@@ -36,13 +7,13 @@ file link: https://github.com/microverseinc/linters-config/blob/master/html-css-
   ## Stylelint
 
   Auto error fix run: 
-npx stylelint "**/*.{css,scss}" --fix
+    npx stylelint "**/*.{css,scss}" --fix
 
 
   ## EsLint
 
   Auto error fix run: 
-npx eslint . --fix
+    npx eslint . --fix
 ____________________________________________________
 
 # GIT COMMANDS
@@ -64,21 +35,5 @@ ____________________________________________________
 
   ##
     
-____________________________________________________
 
-## Git flow 
 
-// After creating the main branch create a dev branch
-git branch dev
-
-// push the dev branch
-git push -u origin dev
-
-// Initialise git flow
-git flow init
-
-// confirm pushing the dev branch
-git push --set-upstream origin dev
-
-// Create your new branch
-git checkout -b [branch name]
