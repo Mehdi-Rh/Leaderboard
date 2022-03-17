@@ -1,15 +1,13 @@
 import './style.css';
 import {
   addScore, displayScore, getStorage, setStorage,
-} from './addScore.js';
+} from './modules.js';
 
-export const name = document.getElementById('name');
-export const scoreInput = document.getElementById('scoreInput');
-export const addScoreBtn = document.getElementById('addScoreBtn');
-export const refreshBtn = document.getElementById('refreshBtn');
-export const liScore = document.createElement('li');
+const name = document.getElementById('name');
+const scoreInput = document.getElementById('scoreInput');
+const addScoreBtn = document.getElementById('addScoreBtn');
+const refreshBtn = document.getElementById('refreshBtn');
 const scoreContainer = document.getElementById('name-score');
-
 const scoreList = getStorage() || [];
 
 displayScore(scoreContainer, scoreList);
