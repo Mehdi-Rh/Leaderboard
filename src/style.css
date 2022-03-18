@@ -1,5 +1,38 @@
+body {
+  margin: 10% 10%;
+  background: radial-gradient(ellipse farthest-corner, #00ced1 50%, #1e90ff 100%);
+}
+
+* {
+  border-radius: 5px;
+  font-weight: 900;
+  color: #fffaf0;
+}
+
+button,
+#name-score,
+input {
+  border: solid #fffaf0;
+  background-color: #fffaf0;
+}
+
+button {
+  background-color: #4b0082;
+  font-size: large;
+  color: #fffaf0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  color: #4b0082;
+}
+
 main {
   display: flex;
+  justify-content: space-evenly;
+  border: solid #fffaf0;
+  background-color: #4b0082;
 }
 
 /* Recent scores */
@@ -21,14 +54,18 @@ main {
 #name-score {
   list-style-type: none;
   padding: 0;
+  width: 120%;
 }
 
 #name-score li {
   padding: 0.5rem;
+  background-color: #fffaf0;
+  color: #4b0082;
 }
 
 #name-score li:nth-child(odd) {
-  background-color: #e3e3e3c0;
+  background-color: #4b0082;
+  color: #fffaf0;
 }
 
 /* Add your score section */
@@ -46,10 +83,4 @@ form #addScoreBtn {
   width: fit-content;
   align-self: flex-end;
   padding: 0.5rem;
-}
-
-button,
-#name-score,
-input {
-  border: solid black 2px;
 }

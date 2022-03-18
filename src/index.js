@@ -1,29 +1,25 @@
 import './style.css';
 import {
-  addScore, displayScore, getStorage, setStorage,
-} from './addScore.js';
+  addScore, getScore, createGame,
+} from './modules.js';
 
-export const name = document.getElementById('name');
-export const scoreInput = document.getElementById('scoreInput');
-export const addScoreBtn = document.getElementById('addScoreBtn');
-export const refreshBtn = document.getElementById('refreshBtn');
-export const liScore = document.createElement('li');
+const name = document.getElementById('name');
+const scoreInput = document.getElementById('scoreInput');
+const addScoreBtn = document.getElementById('addScoreBtn');
+const refreshBtn = document.getElementById('refreshBtn');
 const scoreContainer = document.getElementById('name-score');
 
-const scoreList = getStorage() || [];
+const urlApi = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
+const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Y52sP8QlRTwtWobzNK6P/scores/';
 
-displayScore(scoreContainer, scoreList);
+createGame(urlApi);
 
 addScoreBtn.addEventListener('click', (e) => {
   e.preventDefault();
-  if (name.value.length > 0 && scoreInput.value.length > 0) {
-    addScore(scoreList, name.value, scoreInput.value);
-    setStorage(scoreList);
-    document.location.reload(true);
-  }
+  addScore(url, name.value, scoreInput.value);
 });
 
 refreshBtn.addEventListener('click', (e) => {
   e.preventDefault();
-  document.location.reload(true);
+  getScore(url, scoreContainer);
 });
