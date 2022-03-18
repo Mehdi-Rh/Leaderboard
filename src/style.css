@@ -1,21 +1,19 @@
 body {
   margin: 10% 10%;
-  background: radial-gradient(ellipse farthest-corner , #00ced1 50%, #1e90ff 100%);
-
+  background: radial-gradient(ellipse farthest-corner, #00ced1 50%, #1e90ff 100%);
 }
 
 * {
   border-radius: 5px;
   font-weight: 900;
   color: #fffaf0;
-
 }
 
 button,
 #name-score,
-input  {
+input {
   border: solid #fffaf0;
-  background-color: #fffaf0 ;
+  background-color: #fffaf0;
 }
 
 button {
@@ -28,7 +26,6 @@ header {
   display: flex;
   justify-content: center;
   color: #4b0082;
-
 }
 
 main {
@@ -36,9 +33,6 @@ main {
   justify-content: space-evenly;
   border: solid #fffaf0;
   background-color: #4b0082;
-
-
-  
 }
 
 /* Recent scores */
@@ -65,14 +59,12 @@ main {
 
 #name-score li {
   padding: 0.5rem;
-  background-color: #fffaf0 ;
-  color: #4b0082 ;
-
-
+  background-color: #fffaf0;
+  color: #4b0082;
 }
 
 #name-score li:nth-child(odd) {
-  background-color: #4b0082 ;
+  background-color: #4b0082;
   color: #fffaf0;
 }
 
@@ -92,5 +84,3 @@ form #addScoreBtn {
   align-self: flex-end;
   padding: 0.5rem;
 }
-
-
