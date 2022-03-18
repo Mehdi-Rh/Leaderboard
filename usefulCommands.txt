@@ -30,7 +30,8 @@ file link: https://github.com/microverseinc/linters-config/blob/master/html-css-
 # LINTERS check & fix
 
   ## weblint
-  Run: npx hint .
+  Run: 
+npx hint .
 
 
   ## Stylelint
